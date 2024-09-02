@@ -16,7 +16,7 @@ const VehicleModels = ({ makeId, year }) => {
   }, [makeId, year]);
 
   if (error) {
-    return <div>Error": {error.message}</div>;
+    return <div>Error: {error.message}</div>;
   }
 
   return models.length === 0 ? (
