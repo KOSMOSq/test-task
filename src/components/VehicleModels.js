@@ -10,9 +10,9 @@ const VehicleModels = ({ makeId, year }) => {
     fetch(
       `${process.env.NEXT_PUBLIC_BASE_URL}/GetModelsForMakeIdYear/makeId/${makeId}/modelyear/${year}?format=json`
     )
-      .then(response => response.json())
-      .then(data => setModels(data.Results))
-      .catch(error => setError(error));
+      .then((response) => response.json())
+      .then((data) => setModels(data.Results))
+      .catch((error) => setError(error));
   }, [makeId, year]);
 
   if (error) {
@@ -23,7 +23,7 @@ const VehicleModels = ({ makeId, year }) => {
     <p>No models found</p>
   ) : (
     <ul>
-      {models.map(model => (
+      {models.map((model) => (
         <li key={model.Model_ID} className="mb-2">
           {model.Model_Name}
         </li>
