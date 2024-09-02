@@ -1,12 +1,12 @@
-'use client';
+"use client";
 
-import Link from 'next/link';
-import { useEffect, useState } from 'react';
+import Link from "next/link";
+import { useEffect, useState } from "react";
 
 const FilterPage = () => {
   const [vehicleTypes, setVehicleTypes] = useState([]);
-  const [selectedVehicleType, setSelectedVehicleType] = useState('');
-  const [selectedYear, setSelectedYear] = useState('');
+  const [selectedVehicleType, setSelectedVehicleType] = useState("");
+  const [selectedYear, setSelectedYear] = useState("");
   const [isEnabled, setIsEnabled] = useState(false);
   const [error, setError] = useState(null);
 

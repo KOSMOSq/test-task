@@ -1,5 +1,5 @@
-import VehicleModels from '@/components/VehicleModels';
-import { Suspense } from 'react';
+import VehicleModels from "@/components/VehicleModels";
+import { Suspense } from "react";
 
 const ResultPage = ({ params }) => {
   const { makeId, year } = params;
